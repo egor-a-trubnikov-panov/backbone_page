@@ -1,0 +1,155 @@
+.page
+  margin: 0;
+  padding: 90px 0 0;
+  background: #5a5a5a;
+
+.wrap
+  width: 900px;
+  margin 0 auto;
+  position: relative;
+
+.products
+  margin-right: 256px;
+  position: relative;
+  z-index: 1;
+
+  &__product
+    width: 146px;
+    height: 318px;
+    float left;
+    margin-right 15px;
+
+  &__picture
+    background-color: #3c3d3d;
+    width: 146px;
+    height: 208px;
+    display: block
+
+  &__button
+    width: 146px;
+    height: 30px;
+    background-color: #3c3d3d;
+    border none;
+    box-shadow none;
+    cursor pointer;
+    margin: 0;
+    padding: 0;
+    color: #60ccff;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    &:focus
+      box-shadow none;
+      outline none;
+    &._added
+      color: #6cfe91;
+
+  &__name
+    color: white;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 6px 0 0;
+    padding: 0;
+    text-align center;
+
+  &__price
+    color: #bababa;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align center;
+    display: block;
+
+.basket
+  width: 249px;
+  min-height: 398px;
+  border-top: 10px solid #60ccff;
+  background-color: #3c3d3d;
+  box-sizing border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-bottom: 15px;
+
+  &__title
+    height: 19px;
+    margin 20px 0 0 12px;
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+
+  &__product
+    margin 11px 20px 0;
+    padding 6px 21px 6px 6px;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    &:hover
+      background-color: #575757
+      .basket__remove
+        display: block
+        cursor pointer;
+      
+  &__remove
+    background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAA7UlEQVQoU22RzQ7BUBCFz4glL+M3FhISEUsJEg8hJBaegoTHEBJLsSA2iLQeh107zr0t2upd3c6c78zcU4E5rm4guKAoS/udPI6OkEGD/b7goXv2O1bjY4CybGN6V7s024W1o9B9ysLiK4pCcbGRzMQKHe1xZNS5xmk+a/evkYchKrIOgADqU7BJfUMoNr0fEEAVQkfechZUvOChharcPkZxwNUCG2fa5EPBk0CTqzj/wP8Df9tFgggmJMWKOp09ZHFNpmdiHXOFVTKN1PR8TA1wINC2gkgaqekpTp+VzJ+8oCTz1FhdnbDeZL/7BkDaWZmbNrgnAAAAAElFTkSuQmCC") no-repeat;
+    width: 12px;
+    height: 12px;
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 9px;
+
+  &__price
+    display: block;
+    margin 28px 0 0 27px;
+    height: 14px;
+    font-family: Ubuntu;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+
+  &__count
+    color: #60ccff;
+    font-weight: 700;
+
+  &__clear
+    margin: 10px 0 0 27px;
+    color: #60ccff;
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor pointer;
+
+
+@media only screen and (min-width: 1400px)
+  .wrap
+    width: 1061px;
+
+@media only screen and (max-width: 1400px)
+  .wrap
+    width: 1061px;
+
+@media only screen and (max-width: 1100px)
+  .wrap
+    width: 900px;
+
+@media only screen and (max-width: 940px)
+  .wrap
+    width: 739px;
+
+@media only screen and (max-width: 800px)
+  .wrap
+    width: 578px;
+
+@media only screen and (max-width: 650px)
+  .wrap
+    width: 417px;

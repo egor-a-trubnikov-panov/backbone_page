@@ -1,0 +1,19 @@
+{
+  "name": "backbone_page",
+  "version": "0.0.0",
+  "authors": [
+    "Egor A Trubnikov-Panov"
+  ],
+  "description": "тестовое задание для enaza",
+  "main": "index.js",
+  "keywords": [
+    "backbone"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.0",
+    "fastdom": "~0.8.6",
+    "vdom": "*"
+  }
+}
