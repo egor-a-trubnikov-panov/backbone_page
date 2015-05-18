@@ -63,6 +63,11 @@ gulp.task('watch_html', function () {
   return gulp.watch(['src/index.html'], ['html']);
 });
 
+gulp.task('json_copy', function () {
+  return gulp.src(['src/products.json'])
+    .pipe(gulp.dest('./dist'))
+});
+
 gulp.task('watch', ['watch_js', 'watch_styl', 'watch_html']);
-gulp.task('build', ['style', 'js', 'html']);
+gulp.task('build', ['style', 'js', 'html', 'json_copy']);
 gulp.task('default', ['build', 'connect', 'watch']);
